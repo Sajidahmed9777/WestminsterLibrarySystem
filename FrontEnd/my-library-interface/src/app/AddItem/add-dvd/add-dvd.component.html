@@ -1,0 +1,46 @@
+<h2><b>Add the new DVDs</b></h2>
+
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="ISBN">ISBN</label>
+      <input type="number" name="isbn" [(ngModel)]="isbn" class="form-control" placeholder="isbn">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="Title">Title</label>
+      <input type="text" class="form-control" name="title" [(ngModel)]="title" placeholder="Title">
+    </div>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="Sector">Sector</label>
+    <input type="text" class="form-control" name="sector" [(ngModel)]="sector" placeholder="Sector">
+  </div>
+  <div class="form-group col-md-4">
+    <label  for="Publication Date">Publication Date</label>
+    <input  type="date" class="form-control" name="publicationDate" [(ngModel)]="publicationDate" placeholder="Publication Date">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="Subtitles">Subtitles</label>
+      <input type="text" class="form-control" name="Subtitles" [(ngModel)]="Subtitles" placeholder="Subtitles">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="Producer">Producer</label>
+      <input type="text" class="form-control" name="Producer" [(ngModel)]="Producer" placeholder="Producer ">
+    </div>
+  </div>
+  <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="Actors">Actors</label>
+        <input type="text" class="form-control" name="Actors" [(ngModel)]="Actors" placeholder="Actors">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="Language">Language</label>
+          <input type="text" class="form-control" name="Language" [(ngModel)]="Language" placeholder="Language">
+        </div>
+  </div></div>
+  <div class="form-group col-md-12">
+  <button type="submit" class="btn btn-primary" (click)="addDVD()">Admit</button>
+  </div>
+</form>

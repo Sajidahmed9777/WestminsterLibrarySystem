@@ -1,0 +1,23 @@
+<app-navigation-bar></app-navigation-bar>
+<h2><b>Borrowed Details</b></h2>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="ISBN">ISBN</label>
+      <input type="number" name="isbn" [(ngModel)]="isbn" class="form-control" placeholder="isbn">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="rId">Reader Id</label>
+      <input type="number" class="form-control" name="rId" [(ngModel)]="rId" placeholder="Reader Id">
+    </div>
+  </div>
+  <div class="form-group col-md-5">
+      <label for="borrowDate">Borrow Date</label>
+      <input type="date" class="form-control" name="borrowDate" [(ngModel)]="borrowDate" placeholder="borrowDate">
+    </div>
+
+  
+  <div class="form-group col-md-12">
+  <button type="submit" class="btn btn-primary" (click)="borrowitem()">Admit</button>
+  </div>
+</form>

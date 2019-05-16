@@ -1,0 +1,38 @@
+<h2><b>Add the new books</b></h2>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="ISBN">ISBN</label >
+      <input type="number" name="isbn" [(ngModel)]="isbn" class="form-control" placeholder="isbn" >
+    </div>
+    <div class="form-group col-md-4">
+      <label for="Title">Title</label>
+      <input type="text" class="form-control" name="title" [(ngModel)]="title" placeholder="Title">
+    </div>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="Sector">Sector</label>
+    <input type="text" class="form-control" name="sector" [(ngModel)]="sector" placeholder="Sector">
+  </div>
+  <div class="form-group col-md-4">
+    <label  for="Publication Date">Publication Date</label>
+    <input  type="date" class="form-control" name="publicationDate" [(ngModel)]="publicationDate" placeholder="Publication Date">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="Author">Author</label>
+      <input type="text" class="form-control" name="Authors" [(ngModel)]="Authors" placeholder="Authors">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="Publisher">Publisher</label>
+      <input type="text" class="form-control" name="Publisher" [(ngModel)]="Publisher" placeholder="Publisher">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">Totoal no.of pages</label>
+      <input type="number" class="form-control" name="Total" [(ngModel)]="Total" placeholder="Totoal no.of pages">
+    </div>
+  </div>
+  <div class="form-group col-md-12">
+  <button type="submit" class="btn btn-primary" (click)="addBook()">Admit</button>
+  </div>
+</form>

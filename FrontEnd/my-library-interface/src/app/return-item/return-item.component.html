@@ -1,0 +1,23 @@
+<app-navigation-bar></app-navigation-bar>
+<h1><b>Returned Items</b></h1>
+
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="ISBN">ISBN</label>
+      <input type="number" name="isbn" [(ngModel)]="isbn" class="form-control" placeholder="isbn">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="rId">Reader Id</label>
+      <input type="number" class="form-control" name="rId" [(ngModel)]="rId" placeholder="Reader Id">
+    </div>
+  </div>
+  <div class="form-group col-md-5">
+      <label for="borrowDate">Borrow Date</label>
+      <input type="date" class="form-control" name="returnDate" [(ngModel)]="returnDate" placeholder="returnDate">
+    </div>
+
+    <div class="form-group col-md-12">
+      <button type="submit" class="btn btn-primary" (click)="returnitem()">Admit</button>
+      </div>
+    </form>

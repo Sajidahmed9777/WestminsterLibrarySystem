@@ -1,0 +1,9 @@
+<app-navigation-bar></app-navigation-bar>
+<form class="form-inline">
+    <label class="control-label col-sm-1" for="ISBN">    ISBN : </label>
+    <div class="col-sm-1">
+      <input type="number" class="form-control" name="isbn" [(ngModel)]="isbn" placeholder="ISBN">
+      <button type="submit" class="btn btn-danger mb-2" (click)="removeItem()">Delete Item</button>
+    </div>
+    
+  </form>
