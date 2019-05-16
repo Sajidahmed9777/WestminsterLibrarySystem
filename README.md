@@ -1,0 +1,1 @@
+This is a library system which stores 150items. 100 Books and 50 DVDs. The front end is built using Angular (bootstrap) and the back end is built using play framework.The front end can be run by -ng serve and back end can be run by using -sbt run commands respectively.
